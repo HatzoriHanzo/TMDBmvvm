@@ -2,6 +2,9 @@ package mobi.audax.pierre.tmdbmvvm.data.repository.movie
 
 import android.util.Log
 import mobi.audax.pierre.tmdbmvvm.data.model.movie.Movie
+import mobi.audax.pierre.tmdbmvvm.data.repository.movie.datasource.MovieCacheDataSource
+import mobi.audax.pierre.tmdbmvvm.data.repository.movie.datasource.MovieLocalDataSource
+import mobi.audax.pierre.tmdbmvvm.data.repository.movie.datasource.MovieRemoteDatasource
 import mobi.audax.pierre.tmdbmvvm.domain.repository.MovieRepository
 
 class MovieRepositoryImpl(

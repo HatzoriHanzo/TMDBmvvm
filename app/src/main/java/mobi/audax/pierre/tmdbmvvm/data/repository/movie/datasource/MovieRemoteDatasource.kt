@@ -1,4 +1,4 @@
-package mobi.audax.pierre.tmdbmvvm.data.repository.movie
+package mobi.audax.pierre.tmdbmvvm.data.repository.movie.datasource
 
 import mobi.audax.pierre.tmdbmvvm.data.model.movie.MovieList
 import retrofit2.Response
