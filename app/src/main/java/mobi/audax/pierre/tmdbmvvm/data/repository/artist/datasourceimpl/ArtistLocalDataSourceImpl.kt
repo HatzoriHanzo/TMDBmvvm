@@ -8,9 +8,7 @@ import mobi.audax.pierre.tmdbmvvm.data.model.artist.Artist
 import mobi.audax.pierre.tmdbmvvm.data.repository.artist.datasource.ArtistLocalDataSource
 
 class ArtistLocalDataSourceImpl(private val dao:ArtistDao) : ArtistLocalDataSource {
-
-
-    override suspend fun getArtists(): List<Artist> = dao.getArtists()
+    override suspend fun getArtistsFromDB(): List<Artist> = dao.getArtists()
 
     override suspend fun saveArtistToLocal(artists: List<Artist>) {
         CoroutineScope(IO).launch {
