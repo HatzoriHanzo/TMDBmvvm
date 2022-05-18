@@ -5,11 +5,10 @@ import mobi.audax.pierre.tmdbmvvm.data.repository.artist.datasource.ArtistCacheD
 
 class ArtistCacheDataSourceImpl : ArtistCacheDataSource {
  private var artistList = ArrayList<Artist>()
-    override suspend fun getArtistFromCache(): List<Artist> {
-        TODO("Not yet implemented")
-    }
+    override suspend fun getArtistFromCache(): List<Artist> = artistList
 
     override suspend fun saveArtistToCache(artists: List<Artist>) {
-        TODO("Not yet implemented")
+        artistList.clear()
+        artistList.addAll(artists)
     }
 }
