@@ -1,7 +1,6 @@
 package mobi.audax.pierre.tmdbmvvm.presentation.di.core
 
 import android.content.Context
-
 import dagger.Module
 import dagger.Provides
 import mobi.audax.pierre.tmdbmvvm.presentation.di.artist.ArtistSubComponent

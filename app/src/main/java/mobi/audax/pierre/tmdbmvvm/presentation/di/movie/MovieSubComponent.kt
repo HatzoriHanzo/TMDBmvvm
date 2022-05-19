@@ -1,6 +1,8 @@
 package mobi.audax.pierre.tmdbmvvm.presentation.di.movie
 
+import com.anushka.tmdbclient.presentation.di.movie.MovieModule
 import dagger.Subcomponent
+import mobi.audax.pierre.tmdbmvvm.presentation.di.movie.MovieScope
 import mobi.audax.pierre.tmdbmvvm.presentation.movie.MovieActivity
 
 @MovieScope
@@ -10,7 +12,7 @@ interface MovieSubComponent {
 
     @Subcomponent.Factory
     interface Factory{
-        fun create():MovieSubComponent
+        fun create(): MovieSubComponent
     }
 
 }

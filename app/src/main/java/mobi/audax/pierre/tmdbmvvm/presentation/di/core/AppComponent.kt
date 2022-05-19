@@ -1,5 +1,6 @@
 package mobi.audax.pierre.tmdbmvvm.presentation.di.core
 
+
 import dagger.Component
 import mobi.audax.pierre.tmdbmvvm.presentation.di.artist.ArtistSubComponent
 import mobi.audax.pierre.tmdbmvvm.presentation.di.movie.MovieSubComponent
@@ -10,7 +11,7 @@ import javax.inject.Singleton
 @Component(
     modules = [
         AppModule::class,
-        RetrofitModule::class,
+        NetModule::class,
         DatabaseModule::class,
         UseCaseModule::class,
         RepositoryModule::class,
@@ -20,8 +21,9 @@ import javax.inject.Singleton
     ]
 )
 interface AppComponent {
-    fun movieSubComponent(): MovieSubComponent
-    fun artistSubComponent(): ArtistSubComponent
-    fun tvShowSubComponent(): TvShowSubComponent
+
+    fun movieSubComponent(): MovieSubComponent.Factory
+    fun tvShowSubComponent(): TvShowSubComponent.Factory
+    fun artistSubComponent(): ArtistSubComponent.Factory
 
 }

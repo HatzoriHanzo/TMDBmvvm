@@ -1,6 +1,5 @@
 package mobi.audax.pierre.tmdbmvvm.presentation.di.artist
 
-
 import dagger.Module
 import dagger.Provides
 import mobi.audax.pierre.tmdbmvvm.domain.usecase.GetArtistUseCase

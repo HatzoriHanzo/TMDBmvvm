@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module
-class RetrofitModule(private val baseUrl: String) {
+class NetModule(private val baseUrl: String) {
     @Singleton
     @Provides
     fun provideRetrofit(): Retrofit =

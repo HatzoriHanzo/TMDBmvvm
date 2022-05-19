@@ -10,7 +10,7 @@ interface TvShowSubComponent {
 
     @Subcomponent.Factory
     interface Factory{
-        fun create():TvShowSubComponent
+        fun create(): TvShowSubComponent
     }
 
 }
