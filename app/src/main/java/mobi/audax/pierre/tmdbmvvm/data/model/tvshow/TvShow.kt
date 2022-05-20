@@ -17,7 +17,7 @@ data class TvShow(
     val name: String?,
     @SerializedName("overview")
     val overview: String?,
-    @SerializedName("posterPath")
+    @SerializedName("poster_path")
     val posterPath: String?
 
     )

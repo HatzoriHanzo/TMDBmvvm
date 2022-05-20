@@ -2,7 +2,6 @@ package mobi.audax.pierre.tmdbmvvm.presentation.di
 
 import mobi.audax.pierre.tmdbmvvm.presentation.di.artist.ArtistSubComponent
 import mobi.audax.pierre.tmdbmvvm.presentation.di.movie.MovieSubComponent
-import mobi.audax.pierre.tmdbmvvm.presentation.di.tvshow.TvShowSubComponent
 
 
 interface Injector {

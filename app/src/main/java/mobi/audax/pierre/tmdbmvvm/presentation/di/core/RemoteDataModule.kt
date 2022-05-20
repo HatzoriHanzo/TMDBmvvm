@@ -8,7 +8,7 @@ import mobi.audax.pierre.tmdbmvvm.data.repository.artist.datasourceimpl.ArtistRe
 import mobi.audax.pierre.tmdbmvvm.data.repository.movie.datasource.MovieRemoteDatasource
 import mobi.audax.pierre.tmdbmvvm.data.repository.movie.datasourceimpl.MovieRemoteDataSourceImpl
 import mobi.audax.pierre.tmdbmvvm.data.repository.tvshow.datasourceimpl.TvShowRemoteDataSourceImpl
-import mobi.audax.pierre.tmdbmvvm.data.repository.tvshow.datsource.TvShowRemoteDataSource
+import mobi.audax.pierre.tmdbmvvm.data.repository.tvshow.datasource.TvShowRemoteDataSource
 import javax.inject.Singleton
 
 

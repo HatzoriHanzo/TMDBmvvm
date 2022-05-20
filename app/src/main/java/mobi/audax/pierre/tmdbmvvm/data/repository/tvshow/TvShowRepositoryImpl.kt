@@ -41,7 +41,7 @@ class TvShowRepositoryImpl(
     suspend fun getLocalTvShowsFromDB(): List<TvShow> {
         lateinit var listTvShows: List<TvShow>
         try {
-                listTvShows = tvShowLocalDataSource.getTvShows()
+                listTvShows = tvShowLocalDataSource.getTvShowsFromDB()
         } catch (e: Exception) {
             Log.e("MyTag", "getMoviesFromApi: " + e.message.toString())
         }

@@ -1,4 +1,4 @@
-package com.anushka.tmdbclient.presentation.di.movie
+package mobi.audax.pierre.tmdbmvvm.presentation.di.movie
 
 import dagger.Module
 import dagger.Provides

@@ -1,7 +1,7 @@
 package mobi.audax.pierre.tmdbmvvm.data.repository.tvshow.datasourceimpl
 
 import mobi.audax.pierre.tmdbmvvm.data.model.tvshow.TvShow
-import mobi.audax.pierre.tmdbmvvm.data.repository.tvshow.datsource.TvShowCacheDataSource
+import mobi.audax.pierre.tmdbmvvm.data.repository.tvshow.datasource.TvShowCacheDataSource
 
 class TvShowCacheDataSourceImpl : TvShowCacheDataSource {
     private var tvShowCacheList = ArrayList<TvShow>()

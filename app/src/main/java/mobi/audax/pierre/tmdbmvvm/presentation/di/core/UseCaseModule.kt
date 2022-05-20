@@ -13,42 +13,31 @@ import javax.inject.Singleton
 class UseCaseModule {
 
 
-    // Movies
     @Provides
-    @Singleton
-    fun provideMovieUseCase(movieRepository: MovieRepository): GetMoviesUseCase{
+    fun provideGetMovieUseCase(movieRepository: MovieRepository):GetMoviesUseCase{
         return GetMoviesUseCase(movieRepository)
     }
-
     @Provides
-    @Singleton
-    fun provideUpdateMovieUseCase(movieRepository: MovieRepository): UpdateMoviesUseCase{
+    fun provideUpdateMovieUseCase(movieRepository: MovieRepository):UpdateMoviesUseCase{
         return UpdateMoviesUseCase(movieRepository)
     }
 
-    // Artist
     @Provides
-    @Singleton
-    fun provideArtistUseCase(artistRepository: ArtistRepository ): GetArtistUseCase{
-        return GetArtistUseCase(artistRepository)
+    fun provideGetTvShowUseCase(tvShowRepository: TvShowRepository):GetTvShowUseCase{
+        return GetTvShowUseCase(tvShowRepository)
+    }
+    @Provides
+    fun provideUpdateTvShowUseCase(tvShowRepository: TvShowRepository):UpdateTvShowUseCase{
+        return UpdateTvShowUseCase(tvShowRepository)
     }
 
     @Provides
-    @Singleton
-    fun provideUpdateArtistUseCase(artistRepository: ArtistRepository): UpdateArtistUseCase{
+    fun provideGetArtistUseCase(artistRepository: ArtistRepository):GetArtistUseCase{
+        return GetArtistUseCase(artistRepository)
+    }
+    @Provides
+    fun provideUpdateArtistUseCase(artistRepository: ArtistRepository):UpdateArtistUseCase{
         return UpdateArtistUseCase(artistRepository)
     }
 
-    // TvShow
-    @Provides
-    @Singleton
-    fun provideTvShowUseCase(tvShowRepository: TvShowRepository): GetTvShowUseCase{
-        return GetTvShowUseCase(tvShowRepository)
-    }
-
-    @Provides
-    @Singleton
-    fun provideUpdateTvShowUseCase(tvShowRepository: TvShowRepository): UpdateTvShowUseCase{
-        return UpdateTvShowUseCase(tvShowRepository)
-    }
 }

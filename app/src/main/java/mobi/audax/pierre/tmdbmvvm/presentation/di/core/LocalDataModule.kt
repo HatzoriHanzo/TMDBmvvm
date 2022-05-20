@@ -10,7 +10,7 @@ import mobi.audax.pierre.tmdbmvvm.data.repository.artist.datasourceimpl.ArtistLo
 import mobi.audax.pierre.tmdbmvvm.data.repository.movie.datasource.MovieLocalDataSource
 import mobi.audax.pierre.tmdbmvvm.data.repository.movie.datasourceimpl.MovieLocalDataSourceImpl
 import mobi.audax.pierre.tmdbmvvm.data.repository.tvshow.datasourceimpl.TvShowLocalDataSourceImpl
-import mobi.audax.pierre.tmdbmvvm.data.repository.tvshow.datsource.TvShowLocalDataSource
+import mobi.audax.pierre.tmdbmvvm.data.repository.tvshow.datasource.TvShowLocalDataSource
 import javax.inject.Singleton
 
 
